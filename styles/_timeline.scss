@@ -1,0 +1,138 @@
+.timeline {
+  width: 90%;
+  height: 170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 20px 0 0;
+  @include display-flex(justify-content, space-between);
+
+  @media (max-width: 650px) {
+    display: none;
+  }
+
+  &__bola {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: $bg-green;
+  }
+
+  &__azul {
+    background-color: $font-color-a-caminho !important;
+  }
+
+  &__azul-ultima {
+    background-color: $font-color-light !important;
+    margin-right: 28px;
+  }
+
+  &__linha img {
+    width: 65em;
+    margin-bottom: 10px;
+
+    ///NÃO ME ORGULHO DESSA PARTE DO CÓDIGO!!!
+    @media (min-width: 650px) and (max-width: 800px) {
+      width: 32em;
+    }
+
+    @media (min-width: 801px) and (max-width: 1200px) {
+      width: 41em;
+    }
+    @media (min-width: 1201px) and (max-width: 1598px) {
+      width: 48em;
+    }
+
+    @media (min-width: 1599px) and (max-width: 1919px) {
+      width: 54em;
+    }
+
+    @media (min-width: 2559px) {
+      width: 91em;
+    }
+  }
+
+  &__linha-azul img {
+    // width: 48em;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+
+  &__div-check-img {
+    @include display-flex(align-items, flex-end);
+    justify-content: flex-end;
+    margin-bottom: 20px;
+  }
+
+  &__check-img {
+    width: 50px;
+    height: 50px;
+    background-color: $bg-green;
+    border-radius: 8px;
+    @include display-flex(align-items, center);
+    justify-content: center;
+    padding: 15px;
+    // margin-right: 5px;
+  }
+
+  &__caminhao {
+    background-color: $font-color-a-caminho !important;
+    margin: 0 0 0 5px;
+  }
+
+  &__span-check-img {
+    margin-top: 5em;
+  }
+
+  &__status-entrega-recebido {
+    @include display-flex(justify-content, flex-start);
+    align-items: flex-end;
+    width: 100px;
+    padding-top: 15px;
+    margin-left: -32px;
+    margin-right: 50px;
+    & p {
+      text-align: center;
+      color: $font-color-light;
+    }
+    & span {
+      color: $font-color;
+      font-weight: 900;
+    }
+  }
+
+  &__status-entrega-azul {
+    margin-left: -22px !important;
+    padding-top: 40px !important;
+  }
+
+  &__status-entrega {
+    @include display-flex(justify-content, flex-start);
+    align-items: flex-end;
+    width: 100px;
+    padding-top: 40px;
+    margin-left: -30px;
+    margin-right: 50px;
+
+    & p {
+      text-align: center;
+      color: $font-color-light;
+    }
+    & span {
+      color: $font-color;
+      font-weight: 900;
+    }
+  }
+
+  &__status-entrega-entrgue {
+    padding-top: 10px;
+    margin-left: -15px;
+    & p {
+      text-align: center;
+      color: $font-color-light;
+    }
+    & span {
+      color: $font-color;
+      font-weight: 900;
+    }
+  }
+}

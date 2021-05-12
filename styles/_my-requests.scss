@@ -1,0 +1,266 @@
+.my-requests {
+  margin-left: 2em;
+  margin-right: auto;
+  margin-bottom: 6em;
+  @include for-adjustments {
+    margin-left: auto;
+  }
+
+  &__title-site h1 {
+    @include display-flex(justify-content, flex-end);
+    font-size: 10em;
+    font-weight: 900;
+    color: $bg-white;
+    text-shadow: 2px 2px black;
+    margin-top: 0.5em;
+    @include for-adjustments {
+      font-size: 5em;
+      justify-content: center;
+    }
+
+    @media (max-width: 380px) {
+      font-size: 3.5em;
+      padding: 30px 0;
+    }
+  }
+
+  &__title-my-requests {
+    color: $bg-white;
+    font-weight: 900;
+    margin-bottom: 0.6em;
+  }
+
+  &__row {
+    background-color: $bg-white;
+    border-radius: 4px;
+    padding: 10px 15px;
+    border: solid 1px $color-border;
+  }
+
+  &__status {
+    @include display-flex(align-items, center);
+    padding: 20px 0;
+
+    @media (max-width: 575px) {
+      justify-content: center;
+    }
+  }
+
+  &__div-img {
+    width: 50px;
+    height: 50px;
+    background-color: $bg-green;
+    border-radius: 8px;
+    @include display-flex(align-items, center);
+    justify-content: center;
+  }
+
+  &__div-ul ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+
+  &__div-ul ul li img {
+    margin-right: 6px;
+  }
+
+  &__div-ul ul li p {
+    color: $bg-green;
+    font-weight: 800;
+    margin: 0;
+  }
+
+  &__status-itens {
+    @include display-flex(align-items, center);
+    justify-content: center;
+    padding: 20px 0;
+  }
+
+  &__div-img-itens {
+    min-width: 60px;
+    @include display-flex(justify-content, flex-start);
+    // @include display-none;
+  }
+
+  &__itens-li {
+    font-weight: 900;
+    min-width: 80px;
+  }
+
+  &__itens-p {
+    color: $font-color !important;
+    font-weight: 800;
+  }
+
+  &__details {
+    margin-top: 20px;
+  }
+
+  &__btn-accordion {
+    color: $font-color !important;
+    font-weight: 900;
+    font-size: 1.2em !important;
+  }
+
+  &__accordion {
+    background-color: $bg-white;
+  }
+
+  &__status-frete {
+    @include display-flex(align-items, center);
+    justify-content: center;
+    padding: 20px 0 20px 10px;
+    margin-right: 5px;
+  }
+
+  &__div-img-frete img {
+    width: 40px;
+    padding-left: 5px;
+    margin-bottom: 20px;
+  }
+
+  &__itens-frete-p span {
+    margin-left: 15px;
+    padding: 0 2px;
+    font-weight: 900;
+    border-radius: 4px !important;
+    border: solid 1px $color-border !important;
+  }
+
+  &__status-pagamento {
+    @include display-flex(align-items, center);
+    justify-content: center;
+    padding: 20px 0;
+  }
+
+  &__div-ul-forma-de-pagamento {
+    padding-left: 10px;
+  }
+
+  &__status-entrega {
+    @include display-flex(justify-content, space-between);
+    align-items: center;
+    padding: 20px 0;
+    @media (max-width: 991px) {
+      padding-left: 30px;
+    }
+  }
+
+  &__ul-entrega {
+    padding-left: 20px;
+  }
+
+  &__itens-p-entrega {
+    color: $bg-green;
+    font-weight: 800;
+  }
+
+  &__div-img-plus-entrega img {
+    margin: 0 70px 20px -2px;
+    border: solid 1px $color-border;
+    padding: 15px;
+    border-radius: 8px;
+
+    @media (max-width: 500px) {
+      margin-right: 30px;
+    }
+  }
+
+  &__li-pedido-caminho p {
+    color: $font-color-a-caminho !important;
+  }
+
+  &__div-img-a-caminho {
+    width: 50px;
+    height: 50px;
+    background-color: $font-color-a-caminho;
+    border-radius: 8px;
+    @include display-flex(align-items, center);
+    justify-content: center;
+  }
+
+  &__itens-li-codigo-de-rastreio {
+    @include display-flex(align-items, center);
+    color: $font-color-a-caminho;
+    font-weight: 900;
+    background-color: #edf0fe;
+    padding: 12px 10px;
+    border-radius: 4px;
+    & img {
+      margin-right: 2px;
+    }
+  }
+
+  /// AQUI VOU COLOCAR OS PEDIDOS QUE VOU ALTERAR SOMENTE A COR DEPENDENDO DO STATUS DA COMPRA.
+  &__em-separacao {
+    background-color: $font-color-em-separacao !important;
+  }
+
+  &__em-separacao-li p {
+    color: $font-color-em-separacao !important;
+  }
+
+  &__pagamento-aprovado {
+    background-color: $font-color-pagamento-aprovado !important;
+  }
+
+  &__pagamento-aprovado-li p {
+    color: $font-color-pagamento-aprovado !important;
+  }
+
+  &__pedido-recebido {
+    background-color: $font-color-pedido-recebido !important;
+  }
+
+  &__pedido-recebido-li p {
+    color: $font-color-pedido-recebido !important;
+  }
+
+  &__pedido-cancelado {
+    background-color: $font-color-pedido-cancelado !important;
+  }
+
+  &__pedido-cancelado-li p {
+    color: $font-color-pedido-cancelado !important;
+  }
+}
+
+///alterações feitas no accordion
+.accordion-button {
+  @media (max-width: 991px) {
+    border: solid 2px $coral !important;
+  }
+
+  &:hover {
+    background-color: $coral;
+  }
+}
+
+.accordion-button:not(.collapsed) {
+  background: $bg-white !important;
+  border: solid 3px $coral !important;
+}
+
+.accordion-button:focus {
+  z-index: none;
+  border-color: $coral !important;
+  outline: 0;
+  box-shadow: none !important;
+}
+
+.accordion-button::after {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: auto;
+  content: "";
+  background-image: url(../assets/imagens/arrow-down2.svg) !important;
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url(../assets/imagens/arrow-down2.svg) !important;
+  transform: rotate(-180deg);
+}

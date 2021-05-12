@@ -1,0 +1,53 @@
+.purchased-items {
+  @include display-flex(align-items, center);
+
+  &__modelo {
+    margin: 10px 0 0 20px;
+  }
+
+  &__modelo div p {
+    margin: 0;
+    color: $font-color-light;
+  }
+
+  &__model-p {
+    color: $font-color !important;
+    font-weight: 900;
+  }
+
+  &__descricao ul {
+    @include display-flex(align-items, center);
+    padding: 0;
+
+    & li {
+      color: $font-color;
+      font-weight: 900;
+    }
+  }
+
+  &__descricao-caracteristicas {
+    margin-left: 30px;
+    border: solid 1px $color-border;
+    padding: 2px;
+    border-radius: 4px;
+  }
+
+  &__avaliacao-produto {
+    @include display-flex(justify-content, flex-end);
+    align-items: center;
+
+    & img {
+      margin: 37px 0 0 0;
+      width: 20px;
+    }
+
+    & p {
+      color: $font-color;
+      font-weight: 900;
+      padding: 40px 40px 0 10px;
+      margin: 0;
+    }
+
+    @include display-none;
+  }
+}

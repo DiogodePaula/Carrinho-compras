@@ -1,0 +1,1499 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="sortcut icon" href="../assets/imagens/sacola.svg" type="image/x-icon" />;
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,600,700' rel='stylesheet' type='text/css'>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Site Tes</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <figure class="nav__hamburger">
+            <img src="../assets/imagens/menu-hamburger.svg" alt="menu" />
+          </figure>
+          <div class="nav__logo mt-1">
+            <h1>LOGO</h1>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="navbar-nav nav__form-search">
+              <div class="nav__form-group">
+                <div class="input-group">
+                  <input type="text" class="nav__search" placeholder="O que você procura hoje?">
+                  <span class="input-group-addon nav__search-img">
+                    <img src="../assets/imagens/Vectorsearch.svg" alt="Lupa" />
+                  </span>
+                </div>
+              </div>
+            </form>
+            <form class="nav__form-nav">
+              <div>
+                <p class="nav__form-nav-p">Comprar</p>
+              </div>
+              <div>
+                <div class="nav__links-perfil">
+                  <img
+                    src="../assets/imagens/sacola.svg"
+                    alt="Sacola"
+                    class="nav__links-perfil-sacola"
+                  />
+                  <img
+                    src="../assets/imagens/icon-perfil.svg"
+                    alt="Perfil"
+                    class="nav__links-perfil-perfil"
+                  />
+                  <p class="m-0">Olá, Jaqueline</p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="enfeite"></div>
+
+    <main class="container-fluid">
+      <section class="row">
+        <!-- CARD PERFIL -->
+        <article class="col-lg-12 col-xl-3">
+          <div class="card">
+            <div class="card__perfil-images">
+              <img
+                src="../assets/imagens/perfil-cinza.svg"
+                class="card__perfil-img"
+                alt="Perfil"
+              />
+              <img
+                src="../assets/imagens/camera.svg"
+                class="card__camera-img"
+                alt="camera"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="text-center" style="font-weight: 800">
+                Jaqueline de Oliveira
+              </h5>
+            </div>
+            <ul class="card__ul">
+              <li class="card__li">
+                <a href="http://">
+                  <img src="../assets/imagens/caixa.svg" alt="" />
+                  Meus pedidos
+                </a>
+              </li>
+              <li class="card__li">
+                <a href="http://">
+                  <img src="../assets/imagens/perfil-card.svg" alt="" />
+                  Meus dados
+                </a>
+              </li>
+              <li class="card__li">
+                <a href="http://">
+                  <img src="../assets/imagens/localizacao.svg" alt="" />
+                  Endereços
+                </a>
+              </li>
+              <li class="card__li">
+                <a href="http://">
+                  <img src="../assets/imagens/medidas.svg" alt="" />
+                  Minhas Medidas
+                </a>
+              </li>
+              <li class="card__li">
+                <a href="http://">
+                  <img src="../assets/imagens/minhas-coisas.svg" alt="" />
+                  Minha conta
+                </a>
+              </li>
+              <li class="card__li">
+                <a href="http://">
+                  <img src="../assets/imagens/sair.svg" alt="" />
+                  Sair
+                </a>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <article class="col-lg-12 col-xl-8 my-requests">
+          <div class="my-requests__title-site">
+            <h1>SITE TES</h1>
+          </div>
+          <h3 class="my-requests__title-my-requests">Meus pedidos</h3>
+          <!-- PRIMEIRO PEDIDO, PEDIDO ENTREGUE-->
+          <div class="row my-requests__row">
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="my-requests__status">
+                <div class="my-requests__div-img">
+                  <img src="../assets/imagens/check.svg" alt="ok" />
+                </div>
+                <div class="my-requests__div-ul">
+                  <ul>
+                    <li>
+                      <img src="../assets/imagens/caixa.svg" alt="caixa" />
+                      Pedido #17048
+                    </li>
+                    <li>
+                      <p>Pedido entregue!</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="my-requests__status-itens">
+                <div class="my-requests__div-img-itens">
+                  <img src="../assets/imagens/bolas.svg" alt="dois itens" />
+                </div>
+                <div class="my-requests__div-ul">
+                  <ul>
+                    <li class="my-requests__itens-li">R$ 980,00</li>
+                    <li>
+                      <p class="my-requests__itens-p">02 itens</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="my-requests__details">
+                      <button
+                        class="accordion-button collapsed my-requests__btn-accordion"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#pedido-1"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseOne"
+                      >
+                        Mais detalhes
+                      </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+         <div class="row accordion-collapse collapse show my-requests__accordion"
+              id="pedido-1"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingOne"
+              >
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="my-requests__status-frete">
+                <div class="my-requests__div-img-frete">
+                  <img src="../assets/imagens/caminhao.svg" alt="Caminhão" />
+                </div>
+                <div class="my-requests__div-ul-frete">
+                  <ul>
+                    <li class="my-requests__itens-li">Frete:</li>
+                    <li>
+                      <p class="my-requests__itens-frete-p">R$ 35,10<span>via SEDEX</span></p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="my-requests__status-pagamento">
+                <div >
+                  <ul class="my-requests__div-ul-forma-de-pagamento">
+                    <li class="my-requests__itens-li">Forma de pagamento:</li>
+                    <li>
+                      <p class="my-requests__itens-p">Cartão de Crédito</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="my-requests__status-entrega">
+                <div class="my-requests__div-ul-entrega">
+                  <ul class="my-requests__ul-entrega">
+                    <li class="my-requests__itens-li">Entregue dia:</li>
+                    <li>
+                      <p class="my-requests__itens-p-entrega">09/fev</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="my-requests__div-img-plus-entrega">
+                  <img src="../assets/imagens/plus.svg" alt="sinal de mais" />
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="timeline">
+                <div class="timeline__bola">
+                  <span class="timeline__linha">
+                    <img src="../assets/imagens/linha.svg" alt="timeline">
+                    <div class="timeline__status-entrega-recebido">
+                      <p>
+                        Pedido <br>
+                        recebido <br>
+                        <span>03/fev 09:33</span>
+                      </p>
+                    </div>
+                  </span>
+                </div>
+                <div class="timeline__bola">
+                  <span class="timeline__linh">
+                    <div class="timeline__status-entrega">
+                      <p>
+                        Pagamento <br>
+                        aprovado <br>
+                        <span>03/fev 14:33</span>
+                      </p>
+                    </div>
+                  </span>
+                </div>
+                <div class="timeline__bola">
+                  <span class="timeline__linha">
+                    <div class="timeline__status-entrega">
+                      <p>
+                        Em <br>
+                        separação <br>
+                        <span>06/fev 09:13</span>
+                      </p>
+                    </div>
+                  </span>
+                </div>
+                <div class="timeline__bola">
+                  <span class="timeline__linha">
+                    <div class="timeline__status-entrega">
+                      <p>
+                        Em <br>
+                        transporte <br>
+                        <span>08/fev 21:45</span>
+                      </p>
+                    </div>
+                  </span>
+                </div>
+                <div class="timeline__div-check-img">
+                  <span class="timeline__span-check-img">
+                    <img src="../assets/imagens/check.svg" alt="ok" class="timeline__check-img">
+                    <div class="timeline__status-entrega-entrgue">
+                      <p>
+                        Pedido <br>
+                        entregue <br>
+                        <span>03/fev 00:00</span>
+                      </p>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="purchased-items">
+                <div class="pedido__img">
+                  <img src="../assets/imagens/quadrado-preto.svg" alt="quadrado-preto">
+                </div>
+                <div class="purchased-items__modelo">
+                  <div>
+                    <p class="purchased-items__model-p">Elastique</p>
+                    <p>R$ 540,00</p>
+                  </div>
+                  <div class="purchased-items__descricao">
+                    <ul>
+                      <li>01 unidade</li>
+                      <li class="purchased-items__descricao-caracteristicas">Cor: Preto</li>
+                      <li class="purchased-items__descricao-caracteristicas">Tamanho: P</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="purchased-items__avaliacao-produto">
+                <img src="../assets/imagens/estrela.svg" alt="estrela">
+                <p>Avalie este produto</p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="purchased-items">
+                <div class="pedido__img">
+                  <img src="../assets/imagens/quadrado-preto.svg" alt="quadrado-preto">
+                </div>
+                <div class="purchased-items__modelo">
+                  <div>
+                    <p class="purchased-items__model-p">Elastique</p>
+                    <p>R$ 540,00</p>
+                  </div>
+                  <div class="purchased-items__descricao">
+                    <ul>
+                      <li>01 unidade</li>
+                      <li class="purchased-items__descricao-caracteristicas">Cor: Preto</li>
+                      <li class="purchased-items__descricao-caracteristicas">Tamanho: P</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="purchased-items__avaliacao-produto">
+                <img src="../assets/imagens/estrela.svg" alt="estrela">
+                <p>Avalie este produto</p>
+              </div>
+            </div>
+          </div>
+          <!-- SEGUNDO PEDIDO, PEDIDO A CAMINHO-->
+          <div class="row my-requests__row">
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="my-requests__status">
+                <div class="my-requests__div-img-a-caminho">
+                  <img src="../assets/imagens/caminhao-white.svg" alt="ok" />
+                </div>
+                <div class="my-requests__div-ul">
+                  <ul>
+                    <li>
+                      <img src="../assets/imagens/caixa.svg" alt="caixa" />
+                      Pedido #15324
+                    </li>
+                    <li class="my-requests__li-pedido-caminho">
+                      <p>Seu pedido está a caminho</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="my-requests__status-itens">
+                <div class="my-requests__div-img-itens">
+                  <img src="../assets/imagens/uma-bola.svg" alt="dois itens" />
+                </div>
+                <div class="my-requests__div-ul">
+                  <ul>
+                    <li class="my-requests__itens-li">R$ 70,00</li>
+                    <li>
+                      <p class="my-requests__itens-p">01 itens</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="my-requests__details">
+                      <button
+                        class="accordion-button collapsed my-requests__btn-accordion"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#pedido-2"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseOne"
+                      >
+                        Mais detalhes
+                      </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+         <div class="row accordion-collapse collapse hide my-requests__accordion"
+              id="pedido-2"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingOne"
+              >
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="my-requests__status-frete">
+                <div class="my-requests__div-img-frete">
+                  <img src="../assets/imagens/caminhao.svg" alt="Caminhão" />
+                </div>
+                <div class="my-requests__div-ul-frete">
+                  <ul>
+                    <li class="my-requests__itens-li">Frete:</li>
+                    <li>
+                      <p class="my-requests__itens-frete-p">R$ 24,10<span>via SEDEX</span></p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="my-requests__status-pagamento">
+                <div >
+                  <ul class="my-requests__div-ul-forma-de-pagamento">
+                    <li class="my-requests__itens-li">Forma de pagamento:</li>
+                    <li>
+                      <p class="my-requests__itens-p">Cartão de Crédito</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="my-requests__status-entrega">
+                <div class="my-requests__div-ul-entrega">
+                  <ul class="my-requests__ul-entrega p-0">
+                    <li class="my-requests__itens-li-codigo-de-rastreio">
+                      <img src="../assets/imagens/copiar.svg" alt="">
+                       OD828132785BR
+                    </li>
+                  </ul>
+                </div>
+                <div class="my-requests__div-img-plus-entrega ms-2">
+                  <img src="../assets/imagens/plus.svg" alt="sinal de mais" />
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="timeline">
+                <div class="timeline__bola timeline__azul">
+                  <span class="timeline__linha-azul">
+                    <img src="../assets/imagens/linha-azul.svg" alt="timeline">
+                    <div class="timeline__status-entrega-recebido">
+                      <p>
+                        Pedido <br>
+                        recebido <br>
+                        <span>03/fev 09:33</span>
+                      </p>
+                    </div>
+                  </span>
+                </div>
+                <div class="timeline__bola timeline__azul">
+                  <span class="timeline__linh">
+                    <div class="timeline__status-entrega">
+                      <p>
+                        Pagamento <br>
+                        aprovado <br>
+                        <span>03/fev 14:33</span>
+                      </p>
+                    </div>
+                  </span>
+                </div>
+                <div class="timeline__bola timeline__azul">
+                  <span class="timeline__linha">
+                    <div class="timeline__status-entrega">
+                      <p>
+                        Em <br>
+                        separação <br>
+                        <span>06/fev 09:13</span>
+                      </p>
+                    </div>
+                  </span>
+                </div>
+                <div class="timeline__div-check-img">
+                  <span class="timeline__span-check-img">
+                    <img src="../assets/imagens/caminhao-white.svg" alt="ok" class="timeline__check-img timeline__caminhao">
+                    <div class="timeline__status-entrega-entrgue">
+                      <p>
+                        Em <br>
+                        transporte <br>
+                        <span>08/fev 21:45</span>
+                      </p>
+                    </div>
+                  </span>
+                </div>
+                <div class="timeline__bola timeline__azul timeline__azul-ultima">
+                  <span class="timeline__linha">
+                    <div class="timeline__status-entrega timeline__status-entrega-azul">
+                      <p>
+                        Produto <br>
+                        entregue <br>
+                        <!-- <span>08/fev 21:45</span> -->
+                      </p>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="purchased-items">
+                <div class="pedido__img">
+                  <img src="../assets/imagens/quadrado-preto.svg" alt="quadrado-preto">
+                </div>
+                <div class="purchased-items__modelo">
+                  <div>
+                    <p class="purchased-items__model-p">Elastique</p>
+                    <p>R$ 540,00</p>
+                  </div>
+                  <div class="purchased-items__descricao">
+                    <ul>
+                      <li>01 unidade</li>
+                      <li class="purchased-items__descricao-caracteristicas">Cor: Preto</li>
+                      <li class="purchased-items__descricao-caracteristicas">Tamanho: P</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="purchased-items__avaliacao-produto">
+                <img src="../assets/imagens/estrela.svg" alt="estrela">
+                <p>Avalie este produto</p>
+              </div>
+            </div>
+          </div>
+          <!-- TERCEIRO PEDIDO, PEDIDO EM SEPARAÇÃO -->
+           <div class="row my-requests__row">
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="my-requests__status">
+                <div class="my-requests__div-img-a-caminho my-requests__em-separacao">
+                  <img src="../assets/imagens/caixa-white.svg" alt="ok" />
+                </div>
+                <div class="my-requests__div-ul">
+                  <ul>
+                    <li>
+                      <img src="../assets/imagens/caixa.svg" alt="caixa" />
+                      Pedido #16432
+                    </li>
+                    <li class="my-requests__li-pedido-caminho my-requests__em-separacao-li">
+                      <p>Seu pedido está em separação</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="my-requests__status-itens">
+                <div class="my-requests__div-img-itens">
+                  <img src="../assets/imagens/uma-bola.svg" alt="um item" />
+                </div>
+                <div class="my-requests__div-ul">
+                  <ul>
+                    <li class="my-requests__itens-li">R$ 800,00</li>
+                    <li>
+                      <p class="my-requests__itens-p">01 itens</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="my-requests__details">
+                      <button
+                        class="accordion-button collapsed my-requests__btn-accordion"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#pedido-3"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseOne"
+                      >
+                        Mais detalhes
+                      </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+         <div class="row accordion-collapse collapse hide my-requests__accordion"
+              id="pedido-3"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingOne"
+              >
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="my-requests__status-frete">
+                <div class="my-requests__div-img-frete">
+                  <img src="../assets/imagens/caminhao.svg" alt="Caminhão" />
+                </div>
+                <div class="my-requests__div-ul-frete">
+                  <ul>
+                    <li class="my-requests__itens-li">Frete:</li>
+                    <li>
+                      <p class="my-requests__itens-frete-p">R$ 24,10<span>via SEDEX</span></p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="my-requests__status-pagamento">
+                <div >
+                  <ul class="my-requests__div-ul-forma-de-pagamento">
+                    <li class="my-requests__itens-li">Forma de pagamento:</li>
+                    <li>
+                      <p class="my-requests__itens-p">Cartão de Crédito</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="my-requests__status-entrega">
+                <div class="my-requests__div-ul-entrega">
+                  <ul class="my-requests__ul-entrega p-0">
+                    <li class="my-requests__itens-li-codigo-de-rastreio">
+                      <img src="../assets/imagens/copiar.svg" alt="">
+                       OD828132785BR
+                    </li>
+                  </ul>
+                </div>
+                <div class="my-requests__div-img-plus-entrega ms-2">
+                  <img src="../assets/imagens/plus.svg" alt="sinal de mais" />
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="timeline">
+                <div class="timeline__bola timeline__azul">
+                  <span class="timeline__linha-azul">
+                    <img src="../assets/imagens/linha-azul.svg" alt="timeline">
+                    <div class="timeline__status-entrega-recebido">
+                      <p>
+                        Pedido <br>
+                        recebido <br>
+                        <span>03/fev 09:33</span>
+                      </p>
+                    </div>
+                  </span>
+                </div>
+                <div class="timeline__bola timeline__azul">
+                  <span class="timeline__linh">
+                    <div class="timeline__status-entrega">
+                      <p>
+                        Pagamento <br>
+                        aprovado <br>
+                        <span>03/fev 14:33</span>
+                      </p>
+                    </div>
+                  </span>
+                </div>
+                <div class="timeline__bola timeline__azul">
+                  <span class="timeline__linha">
+                    <div class="timeline__status-entrega">
+                      <p>
+                        Em <br>
+                        separação <br>
+                        <span>06/fev 09:13</span>
+                      </p>
+                    </div>
+                  </span>
+                </div>
+                <div class="timeline__div-check-img">
+                  <span class="timeline__span-check-img">
+                    <img src="../assets/imagens/caminhao-white.svg" alt="ok" class="timeline__check-img timeline__caminhao">
+                    <div class="timeline__status-entrega-entrgue">
+                      <p>
+                        Em <br>
+                        transporte <br>
+                        <span>08/fev 21:45</span>
+                      </p>
+                    </div>
+                  </span>
+                </div>
+                <div class="timeline__bola timeline__azul timeline__azul-ultima">
+                  <span class="timeline__linha">
+                    <div class="timeline__status-entrega timeline__status-entrega-azul">
+                      <p>
+                        Produto <br>
+                        entregue <br>
+                        <!-- <span>08/fev 21:45</span> -->
+                      </p>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="purchased-items">
+                <div class="pedido__img">
+                  <img src="../assets/imagens/quadrado-preto.svg" alt="quadrado-preto">
+                </div>
+                <div class="purchased-items__modelo">
+                  <div>
+                    <p class="purchased-items__model-p">Elastique</p>
+                    <p>R$ 540,00</p>
+                  </div>
+                  <div class="purchased-items__descricao">
+                    <ul>
+                      <li>01 unidade</li>
+                      <li class="purchased-items__descricao-caracteristicas">Cor: Preto</li>
+                      <li class="purchased-items__descricao-caracteristicas">Tamanho: P</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="purchased-items__avaliacao-produto">
+                <img src="../assets/imagens/estrela.svg" alt="estrela">
+                <p>Avalie este produto</p>
+              </div>
+            </div>
+          </div>         
+          <!-- QUARTO PEDIDO, PAGAMENTO APROVADO -->
+           <div class="row my-requests__row">
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="my-requests__status">
+                <div class="my-requests__div-img-a-caminho my-requests__pagamento-aprovado">
+                  <img src="../assets/imagens/positivo.svg" alt="positivo" />
+                </div>
+                <div class="my-requests__div-ul">
+                  <ul>
+                    <li>
+                      <img src="../assets/imagens/caixa.svg" alt="caixa" />
+                      Pedido #36597
+                    </li>
+                    <li class="my-requests__li-pedido-caminho my-requests__pagamento-aprovado-li">
+                      <p>O pagamento foi aprovado!</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="my-requests__status-itens">
+                <div class="my-requests__div-img-itens">
+                  <img src="../assets/imagens/bolas.svg" alt="dois itens" />
+                </div>
+                <div class="my-requests__div-ul">
+                  <ul>
+                    <li class="my-requests__itens-li">R$ 1250,00</li>
+                    <li>
+                      <p class="my-requests__itens-p">02 itens</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="my-requests__details">
+                      <button
+                        class="accordion-button collapsed my-requests__btn-accordion"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#pedido-4"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseOne"
+                      >
+                        Mais detalhes
+                      </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+         <div class="row accordion-collapse collapse hide my-requests__accordion"
+              id="pedido-4"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingOne"
+              >
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="my-requests__status-frete">
+                <div class="my-requests__div-img-frete">
+                  <img src="../assets/imagens/caminhao.svg" alt="Caminhão" />
+                </div>
+                <div class="my-requests__div-ul-frete">
+                  <ul>
+                    <li class="my-requests__itens-li">Frete:</li>
+                    <li>
+                      <p class="my-requests__itens-frete-p">R$ 24,10<span>via SEDEX</span></p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="my-requests__status-pagamento">
+                <div >
+                  <ul class="my-requests__div-ul-forma-de-pagamento">
+                    <li class="my-requests__itens-li">Forma de pagamento:</li>
+                    <li>
+                      <p class="my-requests__itens-p">Cartão de Crédito</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="my-requests__status-entrega">
+                <div class="my-requests__div-ul-entrega">
+                  <ul class="my-requests__ul-entrega p-0">
+                    <li class="my-requests__itens-li-codigo-de-rastreio">
+                      <img src="../assets/imagens/copiar.svg" alt="">
+                       OD828132785BR
+                    </li>
+                  </ul>
+                </div>
+                <div class="my-requests__div-img-plus-entrega ms-2">
+                  <img src="../assets/imagens/plus.svg" alt="sinal de mais" />
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="timeline">
+                <div class="timeline__bola timeline__azul">
+                  <span class="timeline__linha-azul">
+                    <img src="../assets/imagens/linha-azul.svg" alt="timeline">
+                    <div class="timeline__status-entrega-recebido">
+                      <p>
+                        Pedido <br>
+                        recebido <br>
+                        <span>03/fev 09:33</span>
+                      </p>
+                    </div>
+                  </span>
+                </div>
+                <div class="timeline__bola timeline__azul">
+                  <span class="timeline__linh">
+                    <div class="timeline__status-entrega">
+                      <p>
+                        Pagamento <br>
+                        aprovado <br>
+                        <span>03/fev 14:33</span>
+                      </p>
+                    </div>
+                  </span>
+                </div>
+                <div class="timeline__bola timeline__azul">
+                  <span class="timeline__linha">
+                    <div class="timeline__status-entrega">
+                      <p>
+                        Em <br>
+                        separação <br>
+                        <span>06/fev 09:13</span>
+                      </p>
+                    </div>
+                  </span>
+                </div>
+                <div class="timeline__div-check-img">
+                  <span class="timeline__span-check-img">
+                    <img src="../assets/imagens/caminhao-white.svg" alt="ok" class="timeline__check-img timeline__caminhao">
+                    <div class="timeline__status-entrega-entrgue">
+                      <p>
+                        Em <br>
+                        transporte <br>
+                        <span>08/fev 21:45</span>
+                      </p>
+                    </div>
+                  </span>
+                </div>
+                <div class="timeline__bola timeline__azul timeline__azul-ultima">
+                  <span class="timeline__linha">
+                    <div class="timeline__status-entrega timeline__status-entrega-azul">
+                      <p>
+                        Produto <br>
+                        entregue <br>
+                        <!-- <span>08/fev 21:45</span> -->
+                      </p>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="purchased-items">
+                <div class="pedido__img">
+                  <img src="../assets/imagens/quadrado-preto.svg" alt="quadrado-preto">
+                </div>
+                <div class="purchased-items__modelo">
+                  <div>
+                    <p class="purchased-items__model-p">Elastique</p>
+                    <p>R$ 540,00</p>
+                  </div>
+                  <div class="purchased-items__descricao">
+                    <ul>
+                      <li>01 unidade</li>
+                      <li class="purchased-items__descricao-caracteristicas">Cor: Preto</li>
+                      <li class="purchased-items__descricao-caracteristicas">Tamanho: P</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="purchased-items__avaliacao-produto">
+                <img src="../assets/imagens/estrela.svg" alt="estrela">
+                <p>Avalie este produto</p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="purchased-items">
+                <div class="pedido__img">
+                  <img src="../assets/imagens/quadrado-preto.svg" alt="quadrado-preto">
+                </div>
+                <div class="purchased-items__modelo">
+                  <div>
+                    <p class="purchased-items__model-p">Elastique</p>
+                    <p>R$ 540,00</p>
+                  </div>
+                  <div class="purchased-items__descricao">
+                    <ul>
+                      <li>01 unidade</li>
+                      <li class="purchased-items__descricao-caracteristicas">Cor: Preto</li>
+                      <li class="purchased-items__descricao-caracteristicas">Tamanho: P</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="purchased-items__avaliacao-produto">
+                <img src="../assets/imagens/estrela.svg" alt="estrela">
+                <p>Avalie este produto</p>
+              </div>
+            </div>
+          </div> 
+          </div>     
+          <!-- QUINTO PEDIDO, PEDIDO RECEBIDO -->
+           <div class="row my-requests__row">
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="my-requests__status">
+                <div class="my-requests__div-img-a-caminho my-requests__pedido-recebido">
+                  <img src="../assets/imagens/sol.svg" alt="sol" />
+                </div>
+                <div class="my-requests__div-ul">
+                  <ul>
+                    <li>
+                      <img src="../assets/imagens/caixa.svg" alt="caixa" />
+                      Pedido #64528
+                    </li>
+                    <li class="my-requests__li-pedido-caminho my-requests__pedido-recebido-li">
+                      <p>O pedido foi recebido</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="my-requests__status-itens">
+                <div class="my-requests__div-img-itens">
+                  <img src="../assets/imagens/bola-preta-plus.svg" alt="dois itens" />
+                </div>
+                <div class="my-requests__div-ul">
+                  <ul>
+                    <li class="my-requests__itens-li">R$ 800,00</li>
+                    <li>
+                      <p class="my-requests__itens-p">03 itens</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="my-requests__details">
+                      <button
+                        class="accordion-button collapsed my-requests__btn-accordion"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#pedido-5"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseOne"
+                      >
+                        Mais detalhes
+                      </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+         <div class="row accordion-collapse collapse hide my-requests__accordion"
+              id="pedido-5"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingOne"
+              >
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="my-requests__status-frete">
+                <div class="my-requests__div-img-frete">
+                  <img src="../assets/imagens/caminhao.svg" alt="Caminhão" />
+                </div>
+                <div class="my-requests__div-ul-frete">
+                  <ul>
+                    <li class="my-requests__itens-li">Frete:</li>
+                    <li>
+                      <p class="my-requests__itens-frete-p">R$ 24,10<span>via SEDEX</span></p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="my-requests__status-pagamento">
+                <div >
+                  <ul class="my-requests__div-ul-forma-de-pagamento">
+                    <li class="my-requests__itens-li">Forma de pagamento:</li>
+                    <li>
+                      <p class="my-requests__itens-p">Cartão de Crédito</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="my-requests__status-entrega">
+                <div class="my-requests__div-ul-entrega">
+                  <ul class="my-requests__ul-entrega p-0">
+                    <li class="my-requests__itens-li-codigo-de-rastreio">
+                      <img src="../assets/imagens/copiar.svg" alt="">
+                       OD828132785BR
+                    </li>
+                  </ul>
+                </div>
+                <div class="my-requests__div-img-plus-entrega ms-2">
+                  <img src="../assets/imagens/plus.svg" alt="sinal de mais" />
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="timeline">
+                <div class="timeline__bola timeline__azul">
+                  <span class="timeline__linha-azul">
+                    <img src="../assets/imagens/linha-azul.svg" alt="timeline">
+                    <div class="timeline__status-entrega-recebido">
+                      <p>
+                        Pedido <br>
+                        recebido <br>
+                        <span>03/fev 09:33</span>
+                      </p>
+                    </div>
+                  </span>
+                </div>
+                <div class="timeline__bola timeline__azul">
+                  <span class="timeline__linh">
+                    <div class="timeline__status-entrega">
+                      <p>
+                        Pagamento <br>
+                        aprovado <br>
+                        <span>03/fev 14:33</span>
+                      </p>
+                    </div>
+                  </span>
+                </div>
+                <div class="timeline__bola timeline__azul">
+                  <span class="timeline__linha">
+                    <div class="timeline__status-entrega">
+                      <p>
+                        Em <br>
+                        separação <br>
+                        <span>06/fev 09:13</span>
+                      </p>
+                    </div>
+                  </span>
+                </div>
+                <div class="timeline__div-check-img">
+                  <span class="timeline__span-check-img">
+                    <img src="../assets/imagens/caminhao-white.svg" alt="ok" class="timeline__check-img timeline__caminhao">
+                    <div class="timeline__status-entrega-entrgue">
+                      <p>
+                        Em <br>
+                        transporte <br>
+                        <span>08/fev 21:45</span>
+                      </p>
+                    </div>
+                  </span>
+                </div>
+                <div class="timeline__bola timeline__azul timeline__azul-ultima">
+                  <span class="timeline__linha">
+                    <div class="timeline__status-entrega timeline__status-entrega-azul">
+                      <p>
+                        Produto <br>
+                        entregue <br>
+                        <!-- <span>08/fev 21:45</span> -->
+                      </p>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="purchased-items">
+                <div class="pedido__img">
+                  <img src="../assets/imagens/quadrado-preto.svg" alt="quadrado-preto">
+                </div>
+                <div class="purchased-items__modelo">
+                  <div>
+                    <p class="purchased-items__model-p">Elastique</p>
+                    <p>R$ 540,00</p>
+                  </div>
+                  <div class="purchased-items__descricao">
+                    <ul>
+                      <li>01 unidade</li>
+                      <li class="purchased-items__descricao-caracteristicas">Cor: Preto</li>
+                      <li class="purchased-items__descricao-caracteristicas">Tamanho: P</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="purchased-items__avaliacao-produto">
+                <img src="../assets/imagens/estrela.svg" alt="estrela">
+                <p>Avalie este produto</p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="purchased-items">
+                <div class="pedido__img">
+                  <img src="../assets/imagens/quadrado-preto.svg" alt="quadrado-preto">
+                </div>
+                <div class="purchased-items__modelo">
+                  <div>
+                    <p class="purchased-items__model-p">Elastique</p>
+                    <p>R$ 540,00</p>
+                  </div>
+                  <div class="purchased-items__descricao">
+                    <ul>
+                      <li>01 unidade</li>
+                      <li class="purchased-items__descricao-caracteristicas">Cor: Preto</li>
+                      <li class="purchased-items__descricao-caracteristicas">Tamanho: P</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="purchased-items__avaliacao-produto">
+                <img src="../assets/imagens/estrela.svg" alt="estrela">
+                <p>Avalie este produto</p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="purchased-items">
+                <div class="pedido__img">
+                  <img src="../assets/imagens/quadrado-preto.svg" alt="quadrado-preto">
+                </div>
+                <div class="purchased-items__modelo">
+                  <div>
+                    <p class="purchased-items__model-p">Elastique</p>
+                    <p>R$ 540,00</p>
+                  </div>
+                  <div class="purchased-items__descricao">
+                    <ul>
+                      <li>01 unidade</li>
+                      <li class="purchased-items__descricao-caracteristicas">Cor: Preto</li>
+                      <li class="purchased-items__descricao-caracteristicas">Tamanho: P</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="purchased-items__avaliacao-produto">
+                <img src="../assets/imagens/estrela.svg" alt="estrela">
+                <p>Avalie este produto</p>
+              </div>
+            </div>
+          </div>         
+          <!-- SEXTO PEDIDO, PEDIDO CANCELADO -->
+           <div class="row my-requests__row">
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="my-requests__status">
+                <div class="my-requests__div-img-a-caminho my-requests__pedido-cancelado">
+                  <img src="../assets/imagens/cancelado.svg" alt="carinha triste" />
+                </div>
+                <div class="my-requests__div-ul">
+                  <ul>
+                    <li>
+                      <img src="../assets/imagens/caixa.svg" alt="caixa" />
+                      Pedido #54462
+                    </li>
+                    <li class="my-requests__li-pedido-caminho my-requests__pedido-cancelado-li">
+                      <p>Seu pedido foi cancelado</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="my-requests__status-itens">
+                <div class="my-requests__div-img-itens">
+                  <img src="../assets/imagens/bola-preta-plus.svg" alt="dois itens" />
+                </div>
+                <div class="my-requests__div-ul">
+                  <ul>
+                    <li class="my-requests__itens-li">R$ 1600,00</li>
+                    <li>
+                      <p class="my-requests__itens-p">03 itens</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="my-requests__details">
+                      <button
+                        class="accordion-button collapsed my-requests__btn-accordion"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#pedido-6"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseOne"
+                      >
+                        Mais detalhes
+                      </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+         <div class="row accordion-collapse collapse hide my-requests__accordion"
+              id="pedido-6"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingOne"
+              >
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="my-requests__status-frete">
+                <div class="my-requests__div-img-frete">
+                  <img src="../assets/imagens/caminhao.svg" alt="Caminhão" />
+                </div>
+                <div class="my-requests__div-ul-frete">
+                  <ul>
+                    <li class="my-requests__itens-li">Frete:</li>
+                    <li>
+                      <p class="my-requests__itens-frete-p">R$ 24,10<span>via SEDEX</span></p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="my-requests__status-pagamento">
+                <div >
+                  <ul class="my-requests__div-ul-forma-de-pagamento">
+                    <li class="my-requests__itens-li">Forma de pagamento:</li>
+                    <li>
+                      <p class="my-requests__itens-p">Cartão de Crédito</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="my-requests__status-entrega">
+                <div class="my-requests__div-ul-entrega">
+                  <ul class="my-requests__ul-entrega p-0">
+                    <li class="my-requests__itens-li-codigo-de-rastreio">
+                      <img src="../assets/imagens/copiar.svg" alt="">
+                       OD828132785BR
+                    </li>
+                  </ul>
+                </div>
+                <div class="my-requests__div-img-plus-entrega ms-2">
+                  <img src="../assets/imagens/plus.svg" alt="sinal de mais" />
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="timeline">
+                <div class="timeline__bola timeline__azul">
+                  <span class="timeline__linha-azul">
+                    <img src="../assets/imagens/linha-azul.svg" alt="timeline">
+                    <div class="timeline__status-entrega-recebido">
+                      <p>
+                        Pedido <br>
+                        recebido <br>
+                        <span>03/fev 09:33</span>
+                      </p>
+                    </div>
+                  </span>
+                </div>
+                <div class="timeline__bola timeline__azul">
+                  <span class="timeline__linh">
+                    <div class="timeline__status-entrega">
+                      <p>
+                        Pagamento <br>
+                        aprovado <br>
+                        <span>03/fev 14:33</span>
+                      </p>
+                    </div>
+                  </span>
+                </div>
+                <div class="timeline__bola timeline__azul">
+                  <span class="timeline__linha">
+                    <div class="timeline__status-entrega">
+                      <p>
+                        Em <br>
+                        separação <br>
+                        <span>06/fev 09:13</span>
+                      </p>
+                    </div>
+                  </span>
+                </div>
+                <div class="timeline__div-check-img">
+                  <span class="timeline__span-check-img">
+                    <img src="../assets/imagens/caminhao-white.svg" alt="ok" class="timeline__check-img timeline__caminhao">
+                    <div class="timeline__status-entrega-entrgue">
+                      <p>
+                        Em <br>
+                        transporte <br>
+                        <span>08/fev 21:45</span>
+                      </p>
+                    </div>
+                  </span>
+                </div>
+                <div class="timeline__bola timeline__azul timeline__azul-ultima">
+                  <span class="timeline__linha">
+                    <div class="timeline__status-entrega timeline__status-entrega-azul">
+                      <p>
+                        Produto <br>
+                        entregue <br>
+                        <!-- <span>08/fev 21:45</span> -->
+                      </p>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="purchased-items">
+                <div class="pedido__img">
+                  <img src="../assets/imagens/quadrado-preto.svg" alt="quadrado-preto">
+                </div>
+                <div class="purchased-items__modelo">
+                  <div>
+                    <p class="purchased-items__model-p">Elastique</p>
+                    <p>R$ 540,00</p>
+                  </div>
+                  <div class="purchased-items__descricao">
+                    <ul>
+                      <li>01 unidade</li>
+                      <li class="purchased-items__descricao-caracteristicas">Cor: Preto</li>
+                      <li class="purchased-items__descricao-caracteristicas">Tamanho: P</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="purchased-items__avaliacao-produto">
+                <img src="../assets/imagens/estrela.svg" alt="estrela">
+                <p>Avalie este produto</p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="purchased-items">
+                <div class="pedido__img">
+                  <img src="../assets/imagens/quadrado-preto.svg" alt="quadrado-preto">
+                </div>
+                <div class="purchased-items__modelo">
+                  <div>
+                    <p class="purchased-items__model-p">Elastique</p>
+                    <p>R$ 540,00</p>
+                  </div>
+                  <div class="purchased-items__descricao">
+                    <ul>
+                      <li>01 unidade</li>
+                      <li class="purchased-items__descricao-caracteristicas">Cor: Preto</li>
+                      <li class="purchased-items__descricao-caracteristicas">Tamanho: P</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="purchased-items__avaliacao-produto">
+                <img src="../assets/imagens/estrela.svg" alt="estrela">
+                <p>Avalie este produto</p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="purchased-items">
+                <div class="pedido__img">
+                  <img src="../assets/imagens/quadrado-preto.svg" alt="quadrado-preto">
+                </div>
+                <div class="purchased-items__modelo">
+                  <div>
+                    <p class="purchased-items__model-p">Elastique</p>
+                    <p>R$ 540,00</p>
+                  </div>
+                  <div class="purchased-items__descricao">
+                    <ul>
+                      <li>01 unidade</li>
+                      <li class="purchased-items__descricao-caracteristicas">Cor: Preto</li>
+                      <li class="purchased-items__descricao-caracteristicas">Tamanho: P</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="purchased-items__avaliacao-produto">
+                <img src="../assets/imagens/estrela.svg" alt="estrela">
+                <p>Avalie este produto</p>
+              </div>
+            </div>
+          </div>           
+        </article>
+      </section>
+    </main>
+    <footer class="container-fluid footer">
+      <section class="row footer__row">
+        <div class="col-lg-12 col-xl-6">
+          <div class="footer__meios-pagamento">
+            <h4>Formas de pagamento</h4>
+            <div>
+              <ul>
+                <li>
+                  <img src="../assets/imagens/visa.svg" alt="visa" width="50">
+                </li>
+                <li>
+                  <img src="../assets/imagens/master.svg" alt="master-card" width="30">
+                </li>
+                <li>
+                  <img src="../assets/imagens/paypal.svg" alt="pay-pal" width="75">
+                </li>
+                <li>
+                  <img src="../assets/imagens/icone-de-pagamento-azul.svg" alt="ícone azul" width="50">
+                </li>
+                <li>
+                  <img src="../assets/imagens/hipercard.svg" alt="hipercard" width="70">
+                </li>
+                <li>
+                  <img src="../assets/imagens/american-express.svg" alt="american-express" width="45">
+                </li>
+                <li>
+                  <img src="../assets/imagens/elo.svg" alt="elo" width="25">
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12 col-xl-6">
+          <div class="footer__protecao">
+            <div>
+              <ul>
+                <li>
+                  <img src="../assets/imagens/site-blindado.svg" alt="site-blindado">
+                </li>
+                <li>
+                  <img src="../assets/imagens/reclame-aqui.svg" alt="reclame-aqui">
+                </li>
+                <li>
+                  <img src="../assets/imagens/compra-segura.svg" alt="compra-segura">
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-12">
+          <p class="footer__text">
+            Preços e condições de pagamento exclusivos para compras via Internet. Vendas sujeitas à analise e confirmação de dados. 
+            Fica garantida a empresa a eventual retificação das ofertas e erros de digitação que possam ter sido veiculados, podendo 
+            ser estornado a compra. 77.941.490/0225-58 - Gazin Industria e Comercio De Móveis e Eletrodomesticos LTDA - ROD PR 082 SN 
+            - Centro - CEP: 87485000 -
+          </p>
+        </div>
+      </section>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+.card {
+  width: 20rem;
+  margin-top: 3.5em;
+  border: none !important;
+  margin-left: auto;
+  // margin-right: auto;
+  @include for-adjustments {
+    margin-right: auto;
+    box-shadow: 2px 5px 2px $color-border;
+  }
+
+  &__perfil-images {
+    @include display-flex(justify-content, center);
+  }
+
+  &__perfil-img {
+    position: relative;
+    width: 50px;
+    padding: 20px 0;
+  }
+
+  &__camera-img {
+    position: absolute;
+    width: 25px;
+    padding: 3px;
+    top: 65px;
+    right: 115px;
+    border: solid 1px #efeded;
+    border-radius: 50%;
+  }
+
+  &__ul {
+    padding-bottom: 40px !important;
+  }
+
+  &__li {
+    margin-top: 30px;
+  }
+
+  &__li a {
+    text-decoration: none;
+    color: $font-color;
+    font-weight: 800;
+
+    &:hover {
+      color: $coral;
+    }
+  }
+
+  &__li img {
+    margin-right: 10px;
+  }
+}

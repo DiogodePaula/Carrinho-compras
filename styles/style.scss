@@ -1,0 +1,185 @@
+///cores principais do site
+$font-color: #5a4b49;
+$font-color-light: #aeabaa;
+$font-color-a-caminho: #4c6ef5;
+$font-color-em-separacao: #7950f2;
+$font-color-pagamento-aprovado: #40c057;
+$font-color-pedido-recebido: #20c997;
+$font-color-pedido-cancelado: #fa5252;
+$bg-white: #ffffff;
+$bg-green: #82c91e;
+$coral: #ff7c76;
+$color-border: rgba(193, 139, 134, 0.2);
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin display-flex($property, $jty-cnt) {
+  display: flex;
+  #{$property}: $jty-cnt;
+}
+
+@mixin for-adjustments {
+  @media (max-width: 1199px) {
+    @content;
+  }
+}
+@mixin display-none {
+  @media (max-width: 990px) {
+    display: none;
+  }
+}
+
+@import "card-perfil", "my-requests", "timeline", "purchased-items", "footer";
+
+body {
+  font-family: "Archivo", sans-serif !important;
+}
+
+.nav {
+  @include display-flex(align-items, center);
+  background-color: $bg-white;
+  padding: 10px 0;
+
+  &__menu-logo {
+    @include display-flex(align-items, center);
+    justify-content: flex-end;
+  }
+
+  &__hamburger img {
+    width: 30px;
+    margin: 12px 30px 0 0;
+    padding: 4px;
+
+    @media (max-width: 991px) {
+      display: none;
+    }
+  }
+
+  &__logo h1 {
+    color: $coral;
+    font-size: 1.8em !important;
+    font-weight: 900;
+    cursor: pointer;
+  }
+
+  &__form-search {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+
+    & div {
+      width: 100%;
+    }
+
+    @media (max-width: 767px) {
+      @include display-flex(justify-content, center);
+      width: 70%;
+      margin: auto;
+    }
+  }
+
+  &__search {
+    width: 80% !important;
+    border-radius: 100px;
+    border: 1px solid $color-border;
+    border-right: none;
+    padding: 5px 5px 5px 15px;
+    box-sizing: border-box;
+    position: relative;
+
+    &:focus {
+      border: solid 2px $coral;
+      box-shadow: 0 0 0 0;
+      outline: 0;
+    }
+  }
+
+  &__search-img {
+    border: 1px solid $color-border;
+    border-radius: 100px;
+    border-left: none;
+    padding: 4px 15px 0 0;
+  }
+
+  &__form-nav {
+    @include display-flex(justify-content, center);
+    margin-top: 15px;
+  }
+
+  &__form-nav-p {
+    padding-right: 200px;
+    cursor: pointer;
+    @media (max-width: 991px) {
+      padding-right: 20px;
+    }
+
+    &:hover {
+      color: $coral;
+    }
+  }
+
+  &__links {
+    @include display-flex(align-items, center);
+    justify-content: space-between;
+  }
+
+  &__links-perfil {
+    @include display-flex(align-items, center);
+
+    & p {
+      cursor: pointer;
+      &:hover {
+        color: $coral;
+      }
+    }
+  }
+
+  &__links-perfil-sacola {
+    margin-right: 30px;
+    cursor: pointer;
+    transition: transform 0.4s;
+
+    &:hover {
+      transform: scale(1.5);
+    }
+  }
+
+  &__links-perfil-perfil {
+    margin-right: 15px;
+    cursor: pointer;
+    transition: transform 0.4s;
+
+    &:hover {
+      transform: scale(1.5);
+    }
+  }
+}
+
+.enfeite {
+  position: absolute;
+  top: -36%;
+  width: 100%;
+  height: 1000px;
+  background-color: $coral;
+  transform: skewY(10deg);
+  z-index: -100 !important;
+  @include for-adjustments {
+    top: -3%;
+  }
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url(../assets/imagens/menu-hamburger.svg) !important;
+}
+
+.navbar-toggler {
+  border: 1px solid $coral !important;
+
+  &:focus {
+    box-shadow: 0 0 0 0.25rem $coral !important;
+  }
+}
